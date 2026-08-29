@@ -45,6 +45,19 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Lunch banner maintainer variable
+RISING_MAINTAINER="JIHAD"
+
+# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer) 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Qualcomm Snapdragon 855" \
+    RisingMaintainer="JIHAD"
+
+RISING_MAINTAINER := JIHAD
+
+# Disable/enable blur support
+TARGET_ENABLE_BLUR := true
+
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8150-common/common.mk)
 
