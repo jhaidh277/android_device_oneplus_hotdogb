@@ -22,6 +22,19 @@ PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := HD1901
 PRODUCT_BRAND := OnePlus
 
+# Lunch banner maintainer variable
+RISING_MAINTAINER="JIHAD"
+
+# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer) 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Qualcomm Snapdragon 855" \
+    RisingMaintainer="JIHAD"
+
+RISING_MAINTAINER := JIHAD
+
+# Disable/enable blur support
+TARGET_ENABLE_BLUR := true
+
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
